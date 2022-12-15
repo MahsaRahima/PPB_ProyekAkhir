@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7EB4DF">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="LaundOn"
+        android:textColor="#02557A"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:text="Hello"
+        android:textSize="34sp"
+        android:textColor="#02557A"
+        android:textStyle="italic"
+        android:fontFamily="serif-monospace"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="148dp"
+        android:text="..."
+        android:textSize="34sp"
+        android:textColor="#02557A"
+        android:textStyle="italic"
+        android:fontFamily="serif-monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_Pesan"
+        android:layout_width="409dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#02557A"
+        android:text="Klik Untuk Memesan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnart2"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:background="#00FFFFFF"
+        android:clickable="true"
+        android:onClick="artikel3"
+        android:text="baca selanjutnya"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIsi3" />
+
+    <TextView
+        android:id="@+id/txtIsi3"
+        android:layout_width="252dp"
+        android:layout_height="54dp"
+        android:text="Istilah laundry atau ruang cuci pakaian pasti sudah tidak asing lagi bagi Kamu. Selain menyediakan jasa cuci baju dan selimut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudul3" />
+
+    <Button
+        android:id="@+id/btnart1"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:background="#00FFFFFF"
+        android:onClick="artikel2"
+        android:text="baca selanjutnya"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIsi2" />
+
+    <Button
+        android:id="@+id/btnart"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:background="#00FFFFFF"
+        android:clickable="true"
+        android:onClick="artikel1"
+        android:text="baca selanjutnya"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIsi" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="101dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/artikel2" />
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="243dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="Intip 6 Cara Pakai Parfum Laundry dengan Benar Berikut Ini!"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Pesan" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="103dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Pesan"
+        app:srcCompat="@drawable/artikel1" />
+
+    <TextView
+        android:id="@+id/txtIsi"
+        android:layout_width="243dp"
+        android:layout_height="50dp"
+        android:text="Cara pakai parfum laundry juga tidak bisa sembarangan. Aroma pakaian yang wangi tidak hanya memberikan kenyamanan bagi penggunanya "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudul" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="102dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/artikel3" />
+
+    <TextView
+        android:id="@+id/txtIsi2"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:text="Tutorial melipat celana. Lemari pakaian yang berantakan adalah mimpi buruk bagi semua orang. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudul2" />
+
+    <TextView
+        android:id="@+id/txtJudul3"
+        android:layout_width="243dp"
+        android:layout_height="38dp"
+        android:text="Best !5 Outlet Laundry Cuci Karpet Terdekat Jakarta "
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnart1" />
+
+    <TextView
+        android:id="@+id/txtJudul2"
+        android:layout_width="243dp"
+        android:layout_height="38dp"
+        android:text="Simpel! 3 Tutorial Melipat Celana Berbagai Jenis "
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnart" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="409dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#02557A"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnart2"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

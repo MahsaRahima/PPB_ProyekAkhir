@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#7EB4DF">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="serif-monospace"
+        android:text="List Pemesan"
+        android:textColor="#02557A"
+        android:textSize="34sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="serif-monospace"
+        android:text="LaundOn"
+        android:textColor="#02557A"
+        android:textSize="48sp"
+        android:textStyle="italic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="491dp"
+        android:layout_above="@+id/btn_tambah"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#02557A" />
+
+</RelativeLayout>
